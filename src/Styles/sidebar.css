@@ -1,0 +1,25 @@
+.nav{
+    display: flex;
+}
+.container{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+}
+
+.list{
+   
+    height: 100vh;
+    width: 20%;
+    background-color: rgb(17, 18, 17);
+   
+    
+}
+.list a{
+    padding: 10px;
+    font-size: large;
+    color: #f3efef;
+}
+li{
+    padding: 15px 20px
+}

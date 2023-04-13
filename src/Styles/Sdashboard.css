@@ -1,0 +1,61 @@
+.sd-items{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(249, 249, 249);
+}
+.row-1-sd{
+    width: 60%;
+    border: 1px solid rgb(241, 236, 236);
+    border-radius: 5px;
+    padding: 25px;
+    background-color: white;
+}
+.course-name{
+    font-size: xx-large;
+    text-align: center;
+    padding: 10px;
+}
+.col-1--r1-sd,.col-2--r1-sd,.col-3--r1-sd,.col-4--r1-sd{
+    border-bottom: 1.5px solid rgb(231, 217, 217);
+    margin-bottom: 5px;
+}
+
+.heart, .download{
+    padding: 5px;
+    margin: 15px;
+}
+.heart:hover, .download:hover{
+   
+background-color: rgb(186, 189, 189);
+    
+}
+.row-2-sd{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin:0px 40px;
+    padding: 20px;
+}
+.col-1-r2-sd{
+    border: 1.5px solid white;
+    border-radius: 40px;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+}
+.col-2-r2-sd{
+    border: 1.5px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    background-color: white
+}
+.col-3-r2-sd{
+    border: 1.5px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    background-color: white
+}
