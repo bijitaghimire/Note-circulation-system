@@ -4,13 +4,13 @@ import Sidebar from './Sidebar';
 
 const Layout = ({ children }) => {
   return (
-    <div className="">
+    <div className="d-flex vh-100">
       {/* <TopMenu /> */}
       <Sidebar />
-      <main className=" mx-auto max-w-screen">
+      <main className=" mxw-lg vw-100">
         {children}
         <Outlet />
-        <div>hi</div>
+        
       </main>
     </div>
   );

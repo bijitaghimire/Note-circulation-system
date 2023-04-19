@@ -8,8 +8,6 @@ import { AiOutlineHtml5,AiOutlineGithub } from "react-icons/ai";
 import { SiAngularjs} from "react-icons/si";
 
 
-
-
 export default function Allcourses() {
   return (
     <>

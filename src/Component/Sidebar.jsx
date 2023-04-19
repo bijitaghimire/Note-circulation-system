@@ -14,7 +14,6 @@ const Sidebar =() =>{
   let component
   switch (window.location.pathname) {
     case './':
-      
       break;
     case '/sdashboard':
       component =<Sdashboard/>      
@@ -41,9 +40,9 @@ const Sidebar =() =>{
       {/* <nav className='nav'> 
       {/* container */}
 
-     <div className='col-1 '>
+     <div className='col-1 bg-dark text-white p-6 sm:overflow-auto z-30 inset-y-0'>
       <div className='row-1'>
-        <ul className='list'>
+        <ul className=' '>
         {/* sidebar */}
         <div className='toplist'>
         <li><a href='/sdashboard'>Sdashboard</a></li>

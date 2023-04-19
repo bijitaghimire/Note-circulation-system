@@ -1,7 +1,8 @@
 import React from 'react'
 import '../Styles/Sdashboard.css';
-import { FaRegHeart } from "react-icons/fa";
+// import { FaRegHeart } from "react-icons/fa";
 import { AiOutlineDownload } from "react-icons/ai";
+import Rating from '../Component/Rating'
 
 export default function Sdashboard() {
   return (
@@ -14,7 +15,8 @@ export default function Sdashboard() {
         <span>Author Name:</span>
         <br/><br/>
         <div>
-        <span className='heart'><FaRegHeart/></span>&nbsp;<span className='download'><AiOutlineDownload/></span>
+        <span className='download'><AiOutlineDownload/></span>
+       <Rating/>
         </div>
         </div><br/>
         <div className='col-2--r1-sd'>
@@ -22,7 +24,8 @@ export default function Sdashboard() {
         <p>Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. Specific applications of AI include expert systems, natural language processing, speech recognition and machine vision.</p>
         <span>Author Name:</span>
         <br/><br/>
-        <span className='heart'><FaRegHeart/></span>&nbsp;<span className='download'><AiOutlineDownload/></span>
+        <span className='download'><AiOutlineDownload/></span>
+        <Rating/>
         <br/>
         </div>
         <div className='col-3--r1-sd'>
@@ -30,14 +33,16 @@ export default function Sdashboard() {
         <p>A software engineer is a person who applies the principles of software engineering to design, develop, maintain, test, and evaluate computer software..</p>
         <span>Author Name:</span>
         <br/><br/>
-        <span className='heart'><FaRegHeart/></span>&nbsp;<span className='download'><AiOutlineDownload/></span>
+        <span className='download'><AiOutlineDownload/></span>
+        <Rating/>
         </div>
         <div className='col-4--r1-sd'>
         <h3>Software engineering.</h3>
         <p>A software engineer is a person who applies the principles of software engineering to design, develop, maintain, test, and evaluate computer software..</p>
         <span>Author Name:</span>
         <br/><br/>
-        <span className='heart'><FaRegHeart/></span>&nbsp;<span className='download'><AiOutlineDownload/></span>
+        <span className='download'><AiOutlineDownload/></span>
+        <Rating/>
         </div>
         <br/>
       </div>
@@ -63,6 +68,10 @@ export default function Sdashboard() {
           <li>Hari Sharma</li>
           <li>Kedar Poudel</li>
           <li>Manoj bhattarai</li>
+          <li>Hari Sharma</li>
+          <li>Kedar Poudel</li>
+          <li>Manoj bhattarai</li>
+        
         </ul>
         
         </div>

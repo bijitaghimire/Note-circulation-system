@@ -26,8 +26,9 @@ function App() {
       
       <Routes> 
           {/* <Route path = "/" element={<Login/>}/> */}
-          <Route element={<Layout />} >
+          <Route path='/' element={<Layout />} >
             <Route path = "/" element={<Sdashboard/>}/>
+            <Route path = "/sdashboard" element={<Sdashboard/>}/>
             <Route path = "/allnotes" element={<Allnotes/>}/>
             <Route path ="/allcourses"  element={<Allcourses/>}/>
             <Route path = "/history" element={<History/>}/>
@@ -36,7 +37,6 @@ function App() {
           </Route>
 
        </Routes>
-      
     </Router>
 {/* 
      <div className="App">
