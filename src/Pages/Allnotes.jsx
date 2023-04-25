@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Styles/allnotes.css'
 
 export default function Allnotes() {
   return (
@@ -6,27 +7,27 @@ export default function Allnotes() {
      
     <div className='allnotes'>
     <h1 className='p-10  mt-20 text-center block'> My Notes</h1>
-      <div className='container text-center mt-20 border border-1'>
+      <div className='container text-center mt-20 '>
       
-      <div class="row row-cols-3" >
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
-        <div className="col"><button className='p-2 m-3  pl-10 pr-10'>Artificial Intelligence</button></div>
+      <div class="row row-cols-4 m-3 p-10" >
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
+        <div className="col"><button>Artificial Intelligence</button></div>
       </div>
       </div>
     </div>

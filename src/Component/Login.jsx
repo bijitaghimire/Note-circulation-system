@@ -1,6 +1,7 @@
-import{React, useEffect, useState}  from 'react'
+import{React, useState}  from 'react'
 import '../Styles/login.css'
-// import {Link } from "react-router-dom";
+// import {Link, useNavigate  } from "react-router-dom";
+
 import { useNavigate } from 'react-router-dom';
 // import Sidebar from './Sidebar'
 
@@ -11,6 +12,11 @@ import { useNavigate } from 'react-router-dom';
 export default function Login(props) {
     const [email, setEmail] = useState('');
     const[pass, setPass] = useState('');
+
+    const navigate = useNavigate();
+    function goToReg (){
+        navigate('/reg')
+    }
     // const navigate = useNavigate();
 //   const logindata =() =>{
 //     const userRef = useRef();
@@ -86,18 +92,19 @@ export default function Login(props) {
          
                     <input className='useremail' type='email' placeholder='valid email' value={email} required onChange={(e) => setEmail(e.target.value)}></input><br/><br/>
                     <input className='userpassword' type='password' placeholder='password' required value={pass} onChange={(e) => setPass(e.target.value)}></input><br/><br/>
-                    <label required>Choose Your Faculty:</label><br/>
-                    <select className='faculty'>
-                        <option value='BSc.CSIT' >BSc.CSIT</option>
-                        <option value='BIT' >BIT</option>
+                    <label>Choose Your Faculty:</label><br/>
+                    <select className="faculty" aria-label=".form-select-sm example">
+                    <option value="bsc.csit" id='1'>BSc.CSIT</option>
+                    <option value="bca" id='2'>BCA</option>
                     </select>
                     <br/><br/>
-                    <label required>Choose Your Role:</label><br/>
-                    <select className='role'>
-                        <option value='teacher' >Teacher</option>
-                        <option value='ea' >Student</option>
-                        <option value='admin'>Admin</option>
+                    <label>Choose Your Role:</label><br/>
+                    <select className="Role" aria-label=".form-select-sm example">
+                    <option value="teacher" id='1'>Teacher</option>
+                    <option value="student" id='2'>Student</option>
+                    <option value="admin" id= '3'>Admin</option>
                     </select>
+                    <br/><br/>
                     <br/><br/>
                     <button  className="btn-1-login" onClick={handleClick} >Submit</button>
                     </form>
@@ -110,7 +117,7 @@ export default function Login(props) {
                 </div> 
                 <div className='no-acc'>
                 <span>Don't have an account? &nbsp;</span> 
-                <button className='btn-2-login' onClick={() =>props.onFormSwitch ('registration')}> Register here</button>
+                <button className='btn-2-login' onClick={goToReg}> Register here</button>
                 {/* onclick={navToReg()} */}
                 </div>
             </div>

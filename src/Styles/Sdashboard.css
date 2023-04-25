@@ -26,9 +26,20 @@
 }
 .heart:hover, .download:hover{
    
-background-color: rgb(186, 189, 189);
+background-color: rgb(4, 4, 146);
+color: white;
     
 }
+.viewmore{
+    float: right;
+    border-color: grey;
+    border-radius: 3px;
+    padding: 3px;
+ }
+ .viewmore:hover{
+    background-color: rgb(4, 4, 146) ;
+    color: white;
+ }
 .row-2-sd{
     border: 1px solid white;
     border-radius: 5px;

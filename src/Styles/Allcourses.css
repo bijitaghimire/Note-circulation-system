@@ -1,5 +1,5 @@
 .courses{
-    background-color:rgb(249, 249, 249)
+    background-color:rgb(249, 249, 249);
 }
 .page-title{
     text-align: center;
@@ -19,13 +19,16 @@
     padding: 10px;
     background-color:white;
 }
-.viewmore{
+.view{
    float: right;
-   border-color: grey;
+   border-color: white;
    border-radius: 3px;
+   border:rgb(249, 249, 249) ;
+   padding: 5px;
 }
-.viewmore:hover{
-  background-color: aquamarine;
+.view:hover{
+  background-color: rgb(4, 4, 146) ;
+  color: white;
 }
 /*
 .column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8, .column-9{

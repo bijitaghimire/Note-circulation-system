@@ -12,11 +12,9 @@
    
     height: 100vh;
     width: 20%;
-    background-color: rgb(17, 18, 17);
-   
-    
+    background-color: rgb(4, 4, 146);    
 }
-.list a{
+ a{
     padding: 10px;
     font-size: large;
     color: #f3efef;

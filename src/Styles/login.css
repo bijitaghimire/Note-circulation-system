@@ -29,20 +29,23 @@
 }
 .signin{
     padding: 20px 30px;
-    color: #F646a0;
+    color: rgb(4, 4, 146);;
     padding:40px 190px ;
    }
 .form-login{
     padding:40px 190px;
    }
 .btn-1-login{
-    background-color: #363DA2;
+    background-color:rgb(4, 4, 146) ;
     color:white;
     border-radius: 3px;
     padding: 4px 10px;
 }
+.btn-2-login{
+  background-color: white;
+}
 .col-2-login{
-    background-color: #F646a0;
+    background-color: rgb(4, 4, 146);;
     height: 595px; 
     width: 50%;
     float: left;
@@ -56,7 +59,8 @@
   .no-acc{
     color: white;
     align-items: center;
-    padding-left: 200px;
+    padding-left: 300px;
+    margin-top: 50px;
   }
 .btn-2-login{
         border-radius: 2px;
@@ -74,7 +78,7 @@
     background-color: rgb(206, 200, 200);
   }
   .btn-2-login:active{
-    background-color: gray;
+    background-color: rgb(12, 10, 10);
   }
   
   @media screen and (max-height: 450px) {
