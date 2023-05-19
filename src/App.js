@@ -8,6 +8,7 @@ import History from "./Pages/History";
 import Sdashboard from "./Pages/Sdashboard";
 import Teacherdashboard from './Pages/Teacherdashboard';
 import Logout from './Pages/Logout';
+import Landing from './Pages/Landing';
 
 import './Styles/App.css';
 
@@ -27,8 +28,8 @@ function App() {
           {/* <Route path = "/" element={<Login/>}/> */}
           <Route path = "/login" element={<Login/>}/>
           <Route path='/reg' element={<Registration/>}/>
-          <Route path='/' element={<Layout/>} > 
-            <Route path = "/" element={<Sdashboard/>}/>
+          <Route path = "/" element={<Landing/>}/>
+          {/* <Route path='/' element={<Layout/>} > 
             <Route path = "/sdashboard" element={<Sdashboard/>}/>
             <Route path = "/tdashboard" element={<Teacherdashboard/>}/>
             <Route path = "/allnotes" element={<Allnotes/>}/>
@@ -36,7 +37,7 @@ function App() {
             <Route path = "/history" element={<History/>}/>
             <Route path ="/profile"  element={<Profile/>}/>
             <Route path = "/logout" element={<Logout/>}/>
-           </Route> 
+           </Route>  */}
 
        </Routes>
     </Router>

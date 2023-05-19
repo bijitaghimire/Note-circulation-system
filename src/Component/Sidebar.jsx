@@ -49,14 +49,14 @@ const Sidebar =() =>{
         <ul className=' '>
         {/* sidebar */}
         <div className='toplist m-5'>
-        <li ><a href='/sdashboard'>Sdashboard</a></li>
-        <li><a href='/tdashboard'>Teacherdashboard</a></li>
-        <li><a href='/allcourses'>Allcourses</a></li>
-        <li><a href='/allnotes'>Allnotes</a></li>
-        <li><a href='/history'>History</a></li>
+        <li className='sidebar-li'><a href='/sdashboard'>Sdashboard</a></li>
+        <li className='sidebar-li'><a href='/tdashboard'>Teacherdashboard</a></li>
+        <li className='sidebar-li'><a href='/allcourses'>Allcourses</a></li>
+        <li className='sidebar-li'><a href='/allnotes'>Allnotes</a></li>
+        <li className='sidebar-li'><a href='/history'>History</a></li>
 
-        <li><a href='/profile'>Profile</a></li>
-        <li><a href='/logout'>Logout</a></li>
+        <li className='sidebar-li' ><a href='/profile'>Profile</a></li>
+        <li className='sidebar-li'><a href='/logout'>Logout</a></li>
         </div>
       </ul>
    
