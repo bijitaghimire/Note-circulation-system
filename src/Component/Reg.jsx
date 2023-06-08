@@ -19,9 +19,9 @@ export default function Registration(props) {
   const [email, setEmail] = useState('');
   const[pass, setPass] = useState('');
   const[cpass, setConPass] = useState('');
-  const[batch, setBatch] = useState('');
-  const[faculty, setFaculty] = useState('');
-  const[number, setNumber] = useState('');
+  // const[batch, setBatch] = useState('');
+  // const[faculty, setFaculty] = useState('');
+  // const[number, setNumber] = useState('');
   // const[data,setData] =useState([])
  
 
@@ -33,13 +33,13 @@ export default function Registration(props) {
   const handleClick =(e)=>{
       e.preventDefault();
       const data={name, email}
-      console.log(data)
        fetch("http://localhost:8080/user/department/{departmentId}/create",{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify(data)
        }).then(()=>{
-        console.log("new student added")
+        
+        alert("new student added")
        })
 
       // var email = document.form.email.value;
@@ -135,8 +135,6 @@ export default function Registration(props) {
          onSubmit={handleClick}
          >Submit</button>
         </form>
-        {email}
-        {pass}
           </div>
         </div>
       </div>

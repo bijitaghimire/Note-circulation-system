@@ -6,67 +6,36 @@ export default function History() {
   const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
   return (
     <>
-    <h1 className='  block p-5 m-10'> Watched history</h1>
-    
-      <div className='records'>
-      <div className=" d-flex p-2 " >
+    <div className='records'>
+    <h1 className='p-10  mt-20 text-center block'> Watched history</h1>
+      <div className=" d-flex " >
         <ul>
-          <li className='rec border-start-2 bg-white m-3 p-4 ' >
-            <div className='p-10 d-flex align-items-center justify-content-between gap-4'>
-              <strong> {date} </strong>
-              <h3>Artifical intelligence</h3>
-            </div>
-            <div>
-              Aurthor: Ram sharma 
-            </div>
-          </li> 
-          <li className=' rec border-start-2 bg-white m-3 p-4' >
-            <div className='p-10 d-flex align-items-center justify-content-between gap-4'>
-              <strong> {date} </strong>
-              <h3 className=' Se 3px'>Software Engineering</h3>
-            </div>
-            <div>
-              Aurthor: Ram sharma 
-            </div>
-          </li> 
-          <li className=' rec border-start-2 bg-white m-3 p-4' >
-            <div className='  p-10 d-flex align-items-center justify-content-between gap-4'>
-              <strong> {date} </strong>
-              <h3 className=' Os 2px'>Operating System</h3>
-            </div>
-            <div>
-              Aurthor: Ram sharma 
-            </div>
-          </li> 
-          <li className=' rec border-start-2 bg-white m-3 p-4' >
-            <div className='p-10 d-flex align-items-center justify-content-between gap-4'>
-              <strong> {date} </strong>
-              <h3 className=' Ai 2px'>Artifical intelligence</h3>
-            </div>
-            <div>
-              Aurthor: Dev khadka
-            </div>
-          </li> 
-          <li className=' rec border-start-2 bg-white m-3 p-4' >
-            <div className='p-10 d-flex align-items-center justify-content-between gap-4'>
-              <strong> {date} </strong>
-              <h3 className='Ai'>Artifical intelligence</h3>
-            </div>
-            <div>
-              Aurthor: samip dhakal 
-            </div>
-          </li> 
-          <li className=' rec border-start-2 bg-white m-3 p-4' >
-            <div className='p-10 d-flex align-items-center justify-content-between gap-4'>
-              <strong> {date} </strong>
-              <h3 className='Ai'>Artifical intelligence</h3>
-            </div>
-            <div>
-              Aurthor: hari sharma 
-            </div>
-          </li> 
-          
-              </ul>
+        <li className='history-list'>
+        <h3 className='history-sub'>Artificial Intelligence</h3>
+          <p>Aurthor name: </p>
+          <span><strong>{date}</strong></span>
+        </li>
+        <li className='history-list'>
+        <h3 className='history-sub'>Artificial Intelligence</h3>
+          <p>Aurthor name: </p>
+          <span><strong>{date}</strong></span>
+        </li>
+        <li className='history-list'>
+        <h3 className='history-sub'>Artificial Intelligence</h3>
+          <p>Aurthor name: </p>
+          <span><strong>{date}</strong></span>
+        </li>
+        <li className='history-list'>
+        <h3 className='history-sub'>Artificial Intelligence</h3>
+          <p>Aurthor name: </p>
+          <span><strong>{date}</strong></span>
+        </li>
+        <li className='history-list'>
+        <h3 className='history-sub'>Artificial Intelligence</h3>
+          <p>Aurthor name: </p>
+          <span><strong>{date}</strong></span>
+        </li>
+        </ul>
     </div>
       </div>
 {/* <h3 className='text-left'>This is my histiry </h3>

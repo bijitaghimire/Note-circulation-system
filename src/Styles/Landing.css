@@ -1,10 +1,6 @@
-.home{
-  background-image: url(../Images/home.avif);
-  height: 100vh;
-  opacity: 70%;
-}
 
-/* Add a black background color to the top navigation */
+
+/* Add a blue background color to the top navigation */
 .topnav {
     background-color: rgb(4, 4, 146) ;
     overflow: hidden;
@@ -30,7 +26,6 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: ;
   color: white;
 }
 
@@ -41,9 +36,8 @@
 .text{
   display: flex;
   justify-content: center;
-  color:  white ;
   text-align: center;
-  padding-top: 300px;
+  padding-top: px;
   text-decoration: double;
 
 
@@ -54,3 +48,24 @@ h3{
   color:  white ;
   text-align: center;
 }
+.landingimg{
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  opacity: 75%;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px #000000;
+}
+

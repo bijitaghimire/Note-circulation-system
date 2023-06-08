@@ -17,75 +17,15 @@ export default function Login(props) {
     function goToReg (){
         navigate('/reg')
     }
-    // const navigate = useNavigate();
-//   const logindata =() =>{
-//     const userRef = useRef();
-//     const errRef = useRef();
- 
-//    const [email, setEmail] = useState('');
-//    const[validEmail, setValidEmail] = useState(false);
-//     const[emlFocus, setEmlFocus] = useState(false);
- 
-//    const[pass, setPass] = useState('');
-//    const[validPass, setValidPass] = useState(false);
-//     const[passFocus, setPasFocus] = useState(false);
-
-//     const[conpass, setConPass] = useState('');
-//    const[validConPass, setValidConPass] = useState(false);
-//     const[conpassFocus, setConPassFocus] = useState(false);
-// // pwd =pass conpass mathpwd
-//      const[errMsg, setErrMsg] = useState('');
-//      const[success, setSuccess] = useState(false);
-
-//      useEffect(()=>{
-//         userRef.current.focus();
-//      },[])
-//      useEffect(()=>{
-//         const result = USER_REGEX.test(user);
-//         console.log(result);
-//         console.log(user);
-//         setValidEmail(result);
-//      }, [user])
-
-//      useEffect(()=>{
-//         const result = USER_REGEX.test(user);
-//         console.log(result);
-//         console.log(pass);
-//         setValidEmail(result);
-//         const con = pwd === conf
-//      }, [user])
-//   }
-
-//   const[cpass, setConPass] = useState('');
-//   const[validConPass, setValidConPass] = useState(false);
-//    const[conpasFocus, setConPassFocus] = useState(false);
-
-   
-    // const[authenticated, setAuthenticated]=useState(localStorage.getItem(localStorage.getItem("authenticated")|| false));
-    // const user=[{username:"", pass:""}]
-    
-    // const haldleSubmit =(e)=>{
-    //     e.preventDefault();
-    //     navigate("/Sidebar")
-        // console.log(email,pass);    
-        // window.location.href = 'http://localhost:3002/tdasboard'
-        // redirect("/sidebaritems")
-        // if(email && pass ===  true){ //after connecting database.
-        //     localStorage.setItem("authenticated", true);
-        //     
-        // }
-       
-   const handleClick=()=>{
-    // navigate("/Sidebar.jsx")
-   }
-    
-    // }
+    function goTolayout (){
+        navigate('/layout')
+    }
   return (
     <section className ='login'>
         <div className ='smalldivision-login'>
             <div className ='col-1-login'>
                 <div className ='log-into-acc'>
-                   <h1 className='signin' > Sign In</h1>
+                   <h1 className='signin' > Login</h1>
                    <br/><br/>
                    <form className ='form-login'>
                    {/* onSubmit={haldleSubmit} */}
@@ -106,7 +46,7 @@ export default function Login(props) {
                     </select>
                     <br/><br/>
                     <br/><br/>
-                    <button  className="btn-1-login" onClick={handleClick} >Submit</button>
+                    <button  className="btn-1-login" onClick={goTolayout} >Submit</button>
                     </form>
                 </div>
             </div>

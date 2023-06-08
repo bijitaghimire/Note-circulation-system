@@ -1,5 +1,6 @@
 .courses{
     background-color:rgb(249, 249, 249);
+    height: 100%;
 }
 .page-title{
     text-align: center;
@@ -16,7 +17,7 @@
     border: 1px solid white;
     border-radius: 5px;
     margin: 15px;
-    padding: 10px;
+    padding: 12px;
     background-color:white;
 }
 .view{
@@ -24,7 +25,7 @@
    border-color: white;
    border-radius: 3px;
    border:rgb(249, 249, 249) ;
-   padding: 5px;
+   padding: 4px;
 }
 .view:hover{
   background-color: rgb(4, 4, 146) ;

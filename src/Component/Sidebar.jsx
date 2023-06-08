@@ -1,4 +1,5 @@
 import React from 'react'
+
 // import { NavLink } from 'react-router-dom'
 import Sdashboard from '../Pages/Sdashboard';
 import Teacherdashboard from '../Pages/Teacherdashboard';
@@ -32,37 +33,44 @@ const Sidebar =() =>{
       component =<History/>      
       break;
     case '/profile':
-      component =<profile/>      
+      component =<Profile/>      
       break;
       case '/logout':
         component =<Logout/>      
         break;
+        // default:
+        //   component=<Sdashboard/>
   }
  
   return (
     <>
-      {/* <nav className='nav'> 
-      {/* container */}
-
-     <div className='col-1 text-white p-6 w-auto  h-auto position-sticky'>
-      <div className='row'>
+      <div>
+    <div className='sidebarr'>
+    <div className='col-1 text-white p-5 m-10 w-auto  h-auto position-sticky'>
+      <div className='sideitemrow'>
         <ul className=' '>
         {/* sidebar */}
-        <div className='toplist m-5'>
-        <li className='sidebar-li'><a href='/sdashboard'>Sdashboard</a></li>
-        <li className='sidebar-li'><a href='/tdashboard'>Teacherdashboard</a></li>
-        <li className='sidebar-li'><a href='/allcourses'>Allcourses</a></li>
-        <li className='sidebar-li'><a href='/allnotes'>Allnotes</a></li>
-        <li className='sidebar-li'><a href='/history'>History</a></li>
+        <div className='toplist m-'>
+        <li className='sidebar-li'><a href='/layout/sdashboard'>Sdashboard</a></li>
+        <li className='sidebar-li'><a href='/layout/tdashboard'>Teacherdashboard</a></li>
+        <li className='sidebar-li'><a href='/layout/allcourses'>Allcourses</a></li>
+        <li className='sidebar-li'><a href='/layout/allnotes'>Allnotes</a></li>
+        <li className='sidebar-li'><a href='/layout/history'>History</a></li>
 
-        <li className='sidebar-li' ><a href='/profile'>Profile</a></li>
-        <li className='sidebar-li'><a href='/logout'>Logout</a></li>
+        <li className='sidebar-li' ><a href='/layout/profile'>Profile</a></li>
+        <li className='sidebar-li'><a href='/layout/logout'>Logout</a></li>
         </div>
       </ul>
    
         </div>
     </div>
+    </div>
+    </div>
+    <div>
       
+    </div>
+    
+      {component}
     </>
      
   )

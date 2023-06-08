@@ -14,42 +14,91 @@ import {IoMdHelpCircleOutline} from 'react-icons/io';
 // import LogoutIcon from '@mui/icons-material/Logout';
 
 export default function Profile() {
-  const[profileshow, setProfileShow]= useState(true)
-  const[settingshow, setSettingShow]= useState()
-  const[helpshow, setHelpShow]= useState()
-  const[feedbackshow, setFeedbackShow]= useState()
+  const[profileshow, setProfileShow]= useState(true);
+  const[settingshow, setSettingShow]= useState();
+  const[helpshow, setHelpShow]= useState();
+  const[feedbackshow, setFeedbackShow]= useState();
+  const[logout, setLogOut]= useState();
+   
+  const toggleProfileShow = () => {
+    setProfileShow(!profileshow);
+  };
+  const toggleSettingShow = () => {
+    setSettingShow(!settingshow);
+  };
+  const toggleHelpShow = () => {
+    setHelpShow(!helpshow);
+  };
+  const toggleFeedbackShow= () => {
+    setFeedbackShow(!feedbackshow);
+  };
+  const toggleLogOut= () => {
+    setLogOut(!logout);
+  };
   
+  function editprofileFunction(){
+    let previouspass = prompt(" enter your previous password:");
+    let newpass = prompt(" enter your new password:");
+
+  }
+  function changeBackgroundcolor (){
+    document.getElementById("backgroung-change").style.backgroundColor = "lightblue";
+  }
  
   return (
     <>
       <div className="profile ">
-      <h1 className='text-center m-5 '>Profile</h1>
+      <h1 className='profile-title '>Profile</h1>
      <div className='profile-items'>
-     <ul className='text-center justify-content-center '>
-      <label>profile information</label>
-        <li className='p-3 '><button onClick={()=>setProfileShow(true)}> <span ><CgProfile/></span> <span className='fw-bold'>Profile information</span></button>
-        profileshow?<h5>profile name</h5>
-        <h5>phone number:</h5>
-        <h56>email address:</h56>:null
+     <ul className='text-left justify-content-center '>
+     
+        <li className='p-2 '><button onClick={toggleProfileShow}> <h4 className='fw-bold'>Profile information</h4></button>
+        { profileshow && (
+        <div>
+          {/* Place your sub-elements here */}
+          <button onClick="editprofileFunction()">edit profile picture</button><br/><br/>
+          <button className='backgroung-change' onClick="changeBackgroundcolor()">change background color</button><br/><br/>
+          <button>Edit Email address</button><br/><br/>
+        </div>
+      )}
+      <button>edit profile name</button>
         </li>
-        <li className='p-3'><button><span ><CgProfile/></span> <span className='fw-bold'>Setting and privacy</span></button> 
-        <h5>Edit name</h5>
-        <h5> Edit phone number:</h5>
-        <h56>Edit Email address:</h56>
+        <li className='p-2'><button onClick={toggleSettingShow}> <h4 className='fw-bold'>Setting and privacy</h4></button> 
+        { settingshow && (
+        <div>
+          {/* Place your sub-elements here */}
+          <button className='sub-button'>edit </button><br/><br/>
+          <button className='sub-button'>Edit </button><br/><br/>
+          <button className='sub-button'>Edit </button><br/><br/>
+        </div>
+      )}
         </li>
-        <li className='p-3'> <span ><CgProfile/></span> <span className='fw-bold'>Help and Support</span>
-        <h5>Edit name</h5>
-        <h5> Edit phone number:</h5>
-        <h56>Edit Email address:</h56></li>
-        <li className='p-3'> <span ><CgProfile/></span> <span className='fw-bold'>Profile information
-        <h5>Help Center</h5>
-        <h5> Support inbox</h5>
-        </span>
+        <li className='p-2'><button onClick={toggleHelpShow}><h4 className='fw-bold'>Help and Support</h4></button> 
+        { helpshow && (
+        <div>
+          {/* Place your sub-elements here */}
+          <button className='sub-button'>Edit </button><br/><br/>
+          <button className='sub-button'>Edit </button><br/><br/>
+        </div>
+      )}
         </li>
-        <li className='p-3'> <span ><CgProfile/></span> <span className='fw-bold'>Give feedback</span>
-        <h5>Write feedback</h5>
+        <li className='p-2'><button onClick={toggleFeedbackShow}> <h4 className='fw-bold'>Give Feedback</h4></button> 
+        { feedbackshow && (
+        <div>
+          {/* Place your sub-elements here */}
+          <button className='sub-button'>Write Feedback</button><br/><br/>
+        </div>
+      )}
         </li>
-        <li className='p-3'> <span ><CgProfile/></span> <span className='fw-bold'>Log Out</span></li>
+        <li className='p-2'><button onClick={toggleLogOut}><h4 className='fw-bold'>Log Out</h4></button> 
+        { logout && (
+        <div>
+          {/* Place your sub-elements here */}
+          <button></button>
+          
+        </div>
+      )}
+        </li>
       </ul>
      </div>
       </div>

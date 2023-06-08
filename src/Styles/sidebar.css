@@ -2,23 +2,26 @@
     display: flex;
     float: left;
 }
-.container{
-    width: 100%;
-    padding: 20px;
+.sidebarr{
     display: flex;
-}
-
-.list{
-   
     height: 100vh;
     width: 20%;
-    background-color: rgb(4, 4, 146);    
+    background-color: rgb(4, 4, 146); 
+}
+
+.sideitemrow{
+    margin-left: 10px;
 }
  a{
     padding: 10px;
     font-size: large;
     color: #f3efef;
+    font-weight: bold;
+}
+a:active{
+    color: black;
+    background-color: white;
 }
  .sidebar-li{
-    padding: 15px 20px
+    padding: 20px 20px
 }

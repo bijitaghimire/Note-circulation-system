@@ -1,10 +1,31 @@
 
-.records li{
-    border: 1px solid rgb(241, 236, 236);
+.records{
+    background-color:rgb(249, 249, 249) ;
+    height: 100%;
    
 }
+.historydata{
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
 
-.rec:hover{
+}
+
+
+.history-list:active{
     color: rgb(4, 4, 146);
  
+}
+.history-list{
+    border: 1px solid  rgb(241, 236, 236);
+    padding: 30px;
+    margin: 4px;
+    background-color: white;
+}
+.history-sub{
+    color: black;
+    padding-left: 30px;
 }
